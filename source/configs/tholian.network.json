@@ -1,0 +1,14 @@
+{
+    "domain": "tholian.network",
+    "formats": {
+        "login":    "{{account.Name}}",
+        "password": "{{account.Password}}"
+    },
+    "protocols": [{
+        "name": "imap",
+        "port": 993
+    }, {
+        "name": "smtp",
+        "port": 465
+    }]
+}

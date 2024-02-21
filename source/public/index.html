@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dragon Mail</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/design/asset/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/design/asset/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/design/asset/favicon-16x16.png">
+		<link rel="manifest" href="/index.webmanifest">
+
+		<link rel="stylesheet" href="/design/theme/index.css">
+		<script type="module" src="/design/theme/index.mjs"></script>
+
+		<link rel="stylesheet" href="/source/view/Index.css">
+		<script type="module" src="/source/view/Index.mjs"></script>
+	</head>
+	<body>
+		<main>
+			<section id="agenda">
+				<header>
+					<button data-view="calendar">Calendar</button>
+					<ul></ul>
+					<span></span>
+				</header>
+				<section></section>
+				<footer>
+					<button data-action="show-deadlines">Show Deadlines</button>
+					<input data-action="search" type="text" placeholder="Search for title, project or description">
+					<button data-action="create">Create Task</button>
+				</footer>
+				<dialog id="agenda-confirm">
+					<header>
+						<b>Complete Task</b>
+					</header>
+					<section>
+						<p>Did you complete the Task?</p>
+					</section>
+					<footer>
+						<button data-confirm="no">No</button>
+						<button data-confirm="yes">Yes</button>
+					</footer>
+				</dialog>
+			</section>
+			<section id="calendar">
+				<header>
+					<button data-view="agenda">Agenda</button>
+					<ul></ul>
+					<span></span>
+				</header>
+				<aside>
+					<h3>Unsheduled Tasks</h3>
+					<p>(Schedule via Drag and Drop)</p>
+					<div></div>
+				</aside>
+            </section>
+        </main>
+    </body>
+</html>
